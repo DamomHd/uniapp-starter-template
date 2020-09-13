@@ -1,6 +1,13 @@
+<!--
+ * @Author: Damom
+ * @Date: 2020-09-09 20:32:00
+ * @LastEditors: Damom
+ * @LastEditTime: 2020-09-13 14:13:15
+ * @Description: file content
+-->
 <template>
 	<view class="content">
-		<image class="logo" src="/static/logo.png"></image>
+		<image class="logo" src="/static/logo.png" @click="login"></image>
 		<view>
 			<text class="title">{{title}}</text>
 		</view>
@@ -18,7 +25,12 @@
 
 		},
 		methods: {
-
+			login(){
+				console.log(1)
+				uni.navigateTo({
+					url: '/pages/login/index'
+				})
+			}
 		}
 	}
 </script>

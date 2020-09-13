@@ -1,0 +1,40 @@
+.row {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+}
+.col {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+.row-item {
+	flex: 1 1;
+}
+.row-start, .col-start {
+    justify-content: flex-start;
+}
+.row-center, .col-center {
+	justify-content: center;
+}
+.col-end, .row-end {
+    justify-content: flex-end;
+}
+.row-between, .col-between {
+    justify-content: space-between;
+}
+.row-around, .col-around {
+    justify-content: space-around;
+}
+.row-mul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+.start-item {
+    align-self: flex-start;
+}
+.end-item{
+    align-items: flex-end;
+}

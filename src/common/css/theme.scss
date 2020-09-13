@@ -1,0 +1,205 @@
+/***********个人less主题前缀***********/
+$prefix: vc;
+/***********个人less主题前缀***********/
+
+// 选中激活效果
+.hover:active {
+  opacity: 0.6;
+}
+/* 全局主题颜色 */
+$themeColor: #eb4046; //主题红
+$second-theme-color: #ea4452; //
+$weixin: #30cb49; //微信绿
+$pengyouquan: #76f345; //朋友圈
+$shareColor: #40b0ff; //分享蓝
+$loadingColor: #ffc364; //下载黄
+$orderColor: #ff9639; //下单黄
+$pageBgColor: #f7f7f7; //页面底色
+$backgroundColor: #fff;
+
+/* 常规使用的颜色 */
+$color-text-base: #000; //默认色
+$color-text-title: #333; //标题色
+$color-text-secondary: #666;
+$color-text-caption: #999; //辅助说明
+$color-text-placeholder: #bbb; //输入框提示
+
+/* 分割线 */
+$lineColor: #eceff1;
+
+/* 骨架屏相关公共变量 */
+$skeleton-theme-color-r: 255;
+$skeleton-theme-color-g: 255;
+$skeleton-theme-color-b: 255;
+$skeleton-theme-color: rgb(
+  $skeleton-theme-color-r,
+  $skeleton-theme-color-g,
+  $skeleton-theme-color-b
+);
+$skeleton-fill-color: #999;
+
+$lazyWidth: 30px;
+$lazyHeight: 30px;
+
+$pxs: 10, 20;
+$fontSizes: 0, 18, 20, 24, 26, 28,30, 36, 48, 60;
+// $mdpsList: {
+//   mg: margin;
+//   ml: margin-left;
+//   mr: margin-right;
+//   mt: margin-top;
+//   mb: margin-bottom;
+//   pd: padding;
+//   pl: padding-left;
+//   pr: padding-right;
+//   pt: padding-top;
+//   pb: padding-bottom;
+// };
+// //生成 margin padding通用类
+// each(@pxs,.(@number,@k,@i){
+//     each(@mdpsList,.(@value,@key,@mindex){
+//         .@{prefix}-@{key}-@{number}{
+//             @{value}: ~'@{number}px'
+//         }
+//         //after伪类
+//         .@{prefix}-@{key}-@{number}-after{
+//             &::after{
+//                 @{value}: ~'@{number}px'
+//             }
+//         }
+//         //before伪类
+//         .@{prefix}-@{key}-@{number}-before{
+//             &::before{
+//                 @{value}: ~'@{number}px'
+//             }
+//         }
+//     })
+// })
+//生成通用几个字体大小类名
+// each(@fontSizes,.(@value){
+//     .@{prefix}-fs-@{value}{
+//         font-size: ~'@{value}px';
+//     }
+// })
+// .${prefix}-full-width{
+//     width: 100%;
+// }
+// .${prefix}-full-height{
+//     height: 100%;
+// }
+// .${prefix}{
+//     &-theme-color{
+//         color:$themeColor
+//     }
+//     &-caption-color{
+//         color:@color-text-caption
+//     }
+//     &-secondary-color{
+//         color:@color-text-secondary
+//     }
+//     &-line-through{
+//         text-decoration: line-through;
+//     }
+// }
+/* 点击效果 */
+.hover:active {
+  opacity: 0.6;
+}
+
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+
+/**
+* 溢出省略号
+* @param {rowCount} 行数
+*/
+// .ellipsis(@rowCount:1) when (@rowCount=1) {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   white-space: nowrap;
+// }
+// .ellipsis(@rowCount:1) when (@rowCount>1) {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   display: -webkit-box;
+//   -webkit-line-clamp: @rowCount;
+//   // /*! autoprefixer: off */
+//   // -webkit-box-orient: vertical;
+//   // /* autoprefixer: on */
+//   word-wrap: break-word;
+//   /*! autoprefixer: ignore next */
+//   -webkit-box-orient: vertical;
+// }
+.img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.row-img {
+  display: inline-block;
+  width: 100%;
+}
+.col-img {
+  display: inline-block;
+  height: 100%;
+}
+.img-contain {
+  object-fit: contain;
+}
+.img-cover {
+  object-fit: cover;
+}
+.vc-fl {
+  float: left;
+}
+.vc-fr {
+  float: right;
+}
+.vc-font-bold {
+  font-weight: bold;
+}
+.vc-text-hidden {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.vc-block {
+  display: block;
+}
+.vc-line-block {
+  display: inline-block;
+}
+.text-line-through {
+  text-decoration: line-through;
+}
+.vc-line-through {
+  text-decoration: line-through;
+}
+.vc-text-md {
+  vertical-align: middle;
+}
+.vc-hide {
+  display: none;
+}
+.vc-show {
+  display: block;
+}
+.vc-inline-block {
+  display: inline-block;
+}
+
+// 清除图片间隔
+.vc-ft-clear {
+  font-size: 0;
+}
+.vc-bg-fff{
+    background-color: #ffffff;
+}
